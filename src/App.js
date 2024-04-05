@@ -1,27 +1,25 @@
-import Navbar from './components/Navbar/Navbar'
-import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs'
-import ProductDetails from './components/ProductDetails/ProductDetails'
-import ProductCarousel from './components/ProductCarousel/ProductCarousel'
-import Footer from './components/Footer/Footer'
-import './App.scss';
-
+import Navbar from "./components/Navbar";
+import Breadcrumbs from "./components/Breadcrumbs";
+import ProductDetails from "./views/ProductDetails";
+import ProductCarousel from "./views/ProductCarousel";
+import Footer from "./components/Footer";
 
 function App() {
-	return (
-		<>
-			<header>
-				<Navbar />
-			</header>
+  return (
+    <>
+      <header>
+        <Navbar />
+      </header>
 
-			<main>
-				<Breadcrumbs />
-				<ProductDetails />
-				<ProductCarousel />
-			</main>
+      <main>
+        <Breadcrumbs />
+        <ProductDetails />
+        <ProductCarousel />
+      </main>
 
-			<Footer />
-		</>
-	);
+      <Footer />
+    </>
+  );
 }
 
 export default App;

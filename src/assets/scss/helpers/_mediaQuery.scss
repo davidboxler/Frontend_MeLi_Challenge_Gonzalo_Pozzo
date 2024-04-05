@@ -1,0 +1,64 @@
+@media screen and (max-width: 1200px) {
+	.main-container {
+		width: auto;
+	}
+
+	.nav-navbar {
+		width: auto;
+	}
+
+	.gallery-container {
+		justify-content: center;
+		height: auto;
+	}
+
+	.thumbnail-container {
+		flex-shrink: 0;
+	}
+
+	.main-img {
+		margin: 20px;
+	}
+
+	.main-img img {
+		width: 100%;
+	}
+
+	.product-carousel {
+		padding: 0 16px;
+	}
+
+	.products-carousel-container {
+		overflow-x: auto;
+		overflow-y: hidden;
+		column-gap: 20px;
+	}
+
+	.products-carousel-container * {
+		width: 225px;
+	}
+
+	.product-details-grid {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-column .mx-30px {
+		margin: 0;
+	}
+
+	.faq-buttons {
+		flex-wrap: wrap;
+		row-gap: 15px;
+	}
+
+	.seller-posts-card-container {
+		overflow-x: auto;
+		overflow-y: hidden;
+		column-gap: 20px;
+	}
+
+	.seller-posts-card-container * {
+		width: 225px;
+	}
+}

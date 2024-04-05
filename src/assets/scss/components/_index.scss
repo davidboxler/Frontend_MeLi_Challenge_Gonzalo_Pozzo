@@ -1,0 +1,53 @@
+@import '../helpers/mixins';
+@import '../helpers/globals';
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+main {
+  background-color: $light-grey;
+}
+
+p {
+  margin: 0;
+}
+
+input,
+li {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+button {
+  border: none;
+  font-family: "Proxima Nova", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+footer {
+  @include footer-style;
+
+  text-align: center;
+  padding: 2em 0 2em 0;
+  width: 100%;
+  background-color: $white;
+  border-top: 20px solid $light-grey;
+
+  a {
+    color: $blue;
+    transition: 0.2s;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}

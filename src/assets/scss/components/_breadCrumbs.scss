@@ -1,0 +1,77 @@
+@import '../helpers/globals';
+
+.main-container {
+  .breadcrumbs-row {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ol,
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin-right: 12px;
+        cursor: pointer;
+        padding-right: 12px;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      .breadcrumbs-list {
+        display: flex;
+        align-items: center;
+
+        li {
+          display: flex;
+          align-items: center;
+          color: $blue;
+          cursor: pointer;
+          transition: 0.2s;
+
+          &:hover {
+            color: $dark-blue;
+          }
+        }
+
+        .breadcrumbs-arrow-right {
+          margin-top: 3px;
+          color: $grey;
+        }
+      }
+    }
+
+    .share-or-sell {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        color: $blue;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+          color: $dark-blue;
+        }
+
+        &:first-child {
+          margin-right: 12px;
+          cursor: pointer;
+          padding-right: 12px;
+          border-right: 1px solid rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
