@@ -3,7 +3,12 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const Breadcrumbs = () => {
   return (
-    <section className="main-container">
+    <section className="main-container pt-15px">
+      <div className="text-interest">
+        <b>Tambi&eacute;n puede interesarte: </b>
+        <span>peluche - peluchestitch</span>
+      </div>
+
       <div className="breadcrumbs-row">
         <section className="breadcrumbs">
           <p>Volver al listado</p>

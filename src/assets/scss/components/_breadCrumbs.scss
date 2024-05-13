@@ -1,6 +1,14 @@
 @import '../helpers/globals';
 
 .main-container {
+  .text-interest {
+    font-size: 14px;
+  }
+  
+  .text-interest {
+    margin-bottom: 8px;
+  }
+
   .breadcrumbs-row {
     font-size: 14px;
     display: flex;

@@ -7,18 +7,23 @@ import { ProductPrice } from "../components/ProductPrice";
 import { Questions } from "../components/Questions";
 import { SellerInfo } from "../components/SellerInfo";
 import { SellerPosts } from "../components/SellerPosts";
+import useWindowWidth from "../hooks/useWindowWidth";
 
 export const ProductDetails = () => {
+  const width = useWindowWidth();
+
   return (
     <section className="main-container product-details-grid bg-white">
       <article className="right-column">
+        {width <= 1200 && <Gallery />}
         <ProductPrice />
         <SellerInfo />
         <Information />
       </article>
 
       <article className="left-column">
-        <Gallery />
+        {width > 1200 && <Gallery />}
+        
         <div className="mx-30px">
           <SellerPosts />
           <ProductFeatures />

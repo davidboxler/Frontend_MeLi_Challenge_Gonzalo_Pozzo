@@ -1,12 +1,17 @@
 @import '../helpers/globals';
 
-.nav-navbar {
-	background-color: $primary;
-	height: 100px;
-	border-bottom: 1px solid $light-grey;
+.header-logo {
+	height: 34px;
+	cursor: pointer;
 }
 
-.nav-navbar.burger-menu-on {
+nav.nav-navbar {
+	background-color: $primary;
+	height: 100px;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+nav.nav-navbar.burger-menu-on {
 	padding-bottom: 825px;
 	background-color: $white;
 }
@@ -16,11 +21,6 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 7px;
-}
-
-.header-logo {
-	height: 34px;
-	cursor: pointer;
 }
 
 input::-webkit-input-placeholder {
@@ -36,27 +36,25 @@ input::-webkit-input-placeholder {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-.search-input-container {
-	svg {
-		cursor: pointer;
-	}
+.search-input-container svg {
+	cursor: pointer;
+}
 
-	.search-input {
-		width: 100%;
-		height: 37px;
-		padding-left: 15px;
-		font-size: 1em;
-		border: none;
-		border-radius: 2px;
-		outline: none;
-	}
+.search-input {
+	width: 100%;
+	height: 37px;
+	padding-left: 15px;
+	font-size: 1em;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+}
 
-	.search-icon {
-		font-size: 24px;
-		color: rgba(0, 0, 0, 0.4);
-		padding: 0 10px;
-		border-left: 1px solid rgba(0, 0, 0, 0.1);
-	}
+.search-icon {
+	font-size: 24px;
+	color: rgba(0, 0, 0, 0.4);
+	padding: 0 10px;
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .free-shipping {
@@ -65,12 +63,12 @@ input::-webkit-input-placeholder {
 	align-items: center;
 	column-gap: 10px;
 	cursor: pointer;
+}
 
-	h3 {
-		font-size: 18px;
-		font-weight: 100;
-		margin: 0;
-	}
+.free-shipping h3 {
+	font-size: 18px;
+	font-weight: 100;
+	margin: 0;
 }
 
 .navbar-main-container {
@@ -84,7 +82,7 @@ input::-webkit-input-placeholder {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	column-gap: 55px;
+	column-gap: 40px;
 }
 
 .shipping-address {
@@ -115,8 +113,6 @@ input::-webkit-input-placeholder {
 
 .address-icon {
 	font-size: 24px;
-	color: rgba(0, 0, 0, 0.4);
-	padding: 0 10px;
 }
 
 .navbar-buttons {
@@ -128,12 +124,12 @@ input::-webkit-input-placeholder {
 
 .navbar-buttons button {
 	font-size: 14px;
-	color: $black;
+	color: rgba(50, 50, 50, 0.6);
 	transition: 0.2s;
 }
 
 .navbar-buttons button:hover {
-	color: $dark;
+	color: rgba(51, 51, 51, 0.9);
 }
 
 .arrow-categoriesBtn {
@@ -162,5 +158,129 @@ input::-webkit-input-placeholder {
 	font-size: 20px;
 	padding-left: 10px;
 	cursor: pointer;
+}
+
+/* NAVBAR MOBILE */
+
+@media screen and (max-width: 1200px) {
+	nav {
+		height: 50px;
+	}
+}
+
+.navbar-mobile-main-container {
+	height: 50px;
+	padding: 0 5px 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// border-bottom: 1px solid #d6d6d6;
+	background-color: $primary;
+}
+
+.search-input-container-mobile {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+	border-radius: 2px;
+	background-color: $white;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-input-mobile {
+	height: 32px;
+	width: 100%;
+	font-size: 1em;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+}
+
+.search-icon-mobile {
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.4);
+	padding: 0 10px;
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-top-icon {
+	font-size: 25px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.shipping-address-mobile {
+	height: 39px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $primary;
+	// border-bottom: 1px solid #dbdbdb;
+	padding: 0 10px;
+}
+
+.address-mobile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.address-mobile p {
+	font-size: 13px;
+}
+
+.user-icon-mobile {
+	font-size: 40px;
+	color: #BBB;
+	padding: 10px;
+	background-color: #EDEDED;
+	border-radius: 50%;
+}
+
+.welcome-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 18px 24px;
+	border-bottom: 1px solid #e6e6e6;
+	column-gap: 15px;
+}
+
+.welcome-container h3 {
+	font-size: 16px;
 	color: $dark;
+	margin: 0;
+}
+
+.welcome-container h4 {
+	margin: 0 0 15px 0;
+	font-size: 14px;
+    color: rgba(0,0,0,.45);
+}
+
+.welcome-main {
+	width: 100%;
+}
+
+.welcome-buttons-container {
+	display: flex;
+	column-gap: 5px;
+}
+
+.burger-list ul {
+	list-style: none;
+	max-height: 190px;
+	padding: 0 25px 16px 25px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.burger-list li {
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+	padding: 13px 0;
+	cursor: pointer;
 }

@@ -3,8 +3,8 @@
 		width: auto;
 	}
 
-	.nav-navbar {
-		width: auto;
+	nav {
+		height: 50px;
 	}
 
 	.gallery-container {
@@ -52,6 +52,7 @@
 		row-gap: 15px;
 	}
 
+	// Seller - post
 	.seller-posts-card-container {
 		overflow-x: auto;
 		overflow-y: hidden;
@@ -60,5 +61,84 @@
 
 	.seller-posts-card-container * {
 		width: 225px;
+	}
+
+	// product-details
+	section.product-details-grid {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-column div.mx-30px {
+		margin: 0;
+	}
+
+	.card-body p {
+		width: 90%;
+	}
+
+	// text
+	.text-interest, .breadcrumbs-row {
+		padding: 0 10px;
+	}
+
+	.share-or-sell {
+		margin: 0;
+	}
+
+	.text-interest {
+		margin-bottom: 0;
+	}
+	
+	.breadcrumbs-row {
+		flex-wrap: wrap;
+	}
+
+	.breadcrumbs nav {
+		height: auto;
+	}
+
+	.header-logo {
+		height: 30px;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.share-or-sell {
+		margin-bottom: 15px;
+	}
+
+	.header-logo {
+		height: 25px;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.reviews-summary-container {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 25px;
+	}
+
+	.new-review-stars {
+		display: flex;
+	}
+
+	.header-logo {
+		height: 20px;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.btn-review-category {
+		padding: 15px 5px;
+	}
+
+	.header-logo {
+		height: 15px;
+		cursor: pointer;
 	}
 }
